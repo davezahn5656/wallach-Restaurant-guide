@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Recommendations Just a Short Walk Away</title>
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #111318;
+      --text: #e6e6e6;
+      --muted: #a9b0bb;
+      --accent: #8dd3ff;
+      --accent2:#ffd788;
+    }
+    *{box-sizing:border-box}
+    body { margin:0; background:linear-gradient(180deg,#0b0c10,#12151b);
+      font-family: system-ui,-apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text); line-height:1.45; }
+    header { padding: 24px 16px 8px; max-width: 1080px; margin: 0 auto; }
+    h1 {margin:0 0 4px; font-weight:800; font-size: clamp(28px, 3.2vw, 40px); letter-spacing:0.2px;}
+    .sub {color:var(--muted); font-size:14px;}
+    .grid { display:grid; gap:18px; padding:16px; max-width:1080px; margin:0 auto 32px;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+    .card { background: linear-gradient(180deg, #171a21, #12151b);
+      border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+    .photo { position:relative; height: 180px; background:#1f2430; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+    .photo img { width:100%; height:100%; object-fit:cover; display:block; }
+    .badge { position:absolute; top:10px; left:10px; background:rgba(0,0,0,.6); color:#fff; padding:6px 9px; border-radius:999px; font-size:12px;
+      backdrop-filter: blur(3px); border:1px solid rgba(255,255,255,.18); }
+    .content { padding:14px 14px 16px; }
+    .name { font-size:18px; font-weight:800; margin:0 0 6px; letter-spacing:.2px;}
+    .row { display:flex; gap:12px; align-items:center; margin:6px 0 0; color:var(--muted); font-size:13px;}
+    .row svg {flex:none; opacity:.8}
+    .chips {display:flex; flex-wrap:wrap; gap:8px; margin-top:10px;}
+    .chip {font-size:12px; color:#111; background:var(--accent2); border-radius:999px; padding:6px 10px; font-weight:700;}
+    .links {display:flex; flex-wrap:wrap; gap:8px; margin-top:12px;}
+    .btn {text-decoration:none; background:var(--accent); color:#001627; font-weight:800; padding:8px 12px; border-radius:10px; font-size:13px;}
+    .btn.alt { background:#2ad3a4; color:#012f24; }
+    footer {max-width:1080px;margin:0 auto 36px; padding:0 16px; color:var(--muted); font-size:12px;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Restaurant Recommendations Just a Short Walk Away</h1>
+  <div class="sub">Handpicked favorites around 14th Street NW—verified images, menus, and links that open directly in your browser.</div>
+</header>
+
+<section class="grid">
+
+  <!-- Gypsy Kitchen -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Gypsy Kitchen DC" src="https://images.squarespace-cdn.com/content/v1/5f282a42c0c6057ff41202e8/1598018894562-8IJZ1H44Z5MPKPPRF9HV/GYPSYKTICHENPR_0096WEB.jpg">
+      <div class="badge">Rooftop · Mediterranean</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Gypsy Kitchen DC</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1825 14th St NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">Happy Hour M–F 4–6p</div><div class="chip">Brunch Sat–Sun</div></div>
+      <div class="links">
+        <a class="btn" href="https://www.gypsykitchendc.com/">Website</a>
+        <a class="btn alt" href="https://www.opentable.com/r/gypsy-kitchen-washington">Reserve</a>
+        <a class="btn" href="https://maps.google.com/?q=1825+14th+St+NW+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Doi Moi -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Doi Moi interior" src="https://platform.dc.eater.com/wp-content/uploads/sites/9/chorus/uploads/chorus_asset/file/22416561/untitled_3937_HDR.jpg?quality=90&strip=all">
+      <div class="badge">Vietnamese · Small plates</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Doi Moi</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1800 14th St NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">HH Mon–Fri 5–7p</div><div class="chip">Bottomless Brunch wknds</div></div>
+      <div class="links">
+        <a class="btn" href="https://www.doimoidc.com/">Website</a>
+        <a class="btn alt" href="https://resy.com/cities/dc/doi-moi">Reserve</a>
+        <a class="btn" href="https://maps.google.com/?q=1800+14th+St+NW+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Barcelona Wine Bar -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Barcelona Wine Bar" src="https://barcelonawinebar.com/media/Barcelona_WH_148-383x258.jpg">
+      <div class="badge">Tapas · Wine</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Barcelona Wine Bar (14th St)</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1622 14th St NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">HH M–Th 4–6p · Fri 2–6p</div><div class="chip">Brunch Sat–Sun</div></div>
+      <div class="links">
+        <a class="btn" href="https://barcelonawinebar.com/location/14th-street/">Website</a>
+        <a class="btn alt" href="https://www.exploretock.com/barcelonawinebar">Reserve</a>
+        <a class="btn" href="https://maps.google.com/?q=1622+14th+St+NW+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Salazar -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Salazar rooftop" src="https://images.getbento.com/accounts/d5a076c42d8e032f1e81d08b613b06f9/media/images/20162Redo_-_9231.jpg?auto=compress%2Cformat&cs=origin&fit=max&w=1200">
+      <div class="badge">Rooftop · Mexican-inspired</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Salazar</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1819 14th St NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">HH Tue–Fri 4–7p</div><div class="chip">Thu HH all night</div></div>
+      <div class="links">
+        <a class="btn" href="https://www.salazardc.com/location/salazar/">Website</a>
+        <a class="btn alt" href="https://www.salazardc.com/location/salazar/#reservations">Reserve</a>
+        <a class="btn" href="https://maps.google.com/?q=1819+14th+St+NW+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Pearl Dive -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Pearl Dive Oyster Palace" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Pearl_Dive_Oyster_Palace_Washington%2C_DC_2020-07-10_%2850127820672%29.jpg">
+      <div class="badge">Seafood · Oyster Bar</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Pearl Dive Oyster Palace</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1612 14th St NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">Oysters</div><div class="chip">Cocktails</div></div>
+      <div class="links">
+        <a class="btn" href="https://pearldivedc.com/">Website</a>
+        <a class="btn alt" href="https://www.opentable.com/r/pearl-dive-oyster-palace-washington">Reserve</a>
+        <a class="btn" href="https://maps.google.com/?q=1612+14th+St+NW+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Chicken + Whiskey -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Chicken + Whiskey" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Chicken_%2B_Whiskey_14th_Street_Washington_DC_2020-09-08_%2850325568321%29.jpg">
+      <div class="badge">Carryout</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Chicken + Whiskey</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1738 14th St NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">Peruvian Chicken</div></div>
+      <div class="links">
+        <a class="btn" href="https://www.chickenandwhiskey.com/">Website</a>
+        <a class="btn" href="https://maps.google.com/?q=1738+14th+St+NW+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Ted’s Bulletin -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Ted's Bulletin 14th Street interior" src="https://images.getbento.com/accounts/0075eaa322fc91f8fb4b14688d89ac7a/media/images/11541teds-bulletin-14th-street-interior.jpg?auto=compress%2Cformat&cs=origin&fit=crop&h=600&w=1200">
+      <div class="badge">Upscale Diner · All-Day Breakfast</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Ted’s Bulletin (14th Street)</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1818 14th St NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">Breakfast & Brunch Daily</div><div class="chip">Happy Hour M–F 3–6:30p</div></div>
+      <div class="links">
+        <a class="btn" href="https://www.tedsbulletin.com/location/14th-street/">Website</a>
+        <a class="btn alt" href="https://www.opentable.com/r/teds-bulletin-14th-street-washington">Reserve</a>
+        <a class="btn" href="https://maps.google.com/?q=1818+14th+St+NW+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Le Diplomate -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Le Diplomate exterior" src="https://upload.wikimedia.org/wikipedia/commons/4/48/Le_Diplomate.jpg">
+      <div class="badge">French · Brasserie</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Le Diplomate</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1601 14th St NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">Classic French Dining</div><div class="chip">Strong Wine List</div></div>
+      <div class="links">
+        <a class="btn" href="https://lediplomatedc.com/">Website</a>
+        <a class="btn alt" href="https://www.opentable.com/r/le-diplomate-washington">Reserve</a>
+        <a class="btn" href="https://maps.google.com/?q=1601+14th+St+NW+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Jeni’s -->
+  <article class="card">
+    <div class="photo">
+      <img alt="Jeni's Splendid Ice Creams" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Jeni%27s_Splendid_Ice_Cream_provided_by_our_resident_dairy_queen_%40hilaryahartman._%2814617784337%29.jpg">
+      <div class="badge">Ice Cream · Dessert</div>
+    </div>
+    <div class="content">
+      <h3 class="name">Jeni’s Splendid Ice Creams</h3>
+      <div class="row">
+        <svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7"/></svg>
+        <div>1925 14th St NW & Wallach Pl NW, Washington DC</div>
+      </div>
+      <div class="chips"><div class="chip">Late Night Treat</div><div class="chip">Walk-Up Friendly</div></div>
+      <div class="links">
+        <a class="btn" href="https://jenis.com/">Website</a>
+        <a class="btn" href="https://maps.google.com/?q=1925+14th+St+NW+Washington+DC">Map</a>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<footer>
+  Built for quick viewing on mobile. Hours & specials can change; follow the links to confirm before you go.
+</footer>
+
+</body>
+</html>
+```0
